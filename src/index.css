@@ -1,0 +1,94 @@
+@import "tailwindcss"; /* ⬅️ صرف یہ ایک لائن */
+
+@layer base {
+  body {
+    font-family: 'Noto Nastaliq Urdu', serif;
+  }
+}
+
+.neon-text {
+  text-shadow: 0 0 8px #22d3ee, 0 0 16px #22d3ee;
+}
+
+.neon-border {
+  box-shadow: 0 0 10px #22d3ee, inset 0 0 10px #22d3ee;
+}
+
+@keyframes shiver {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  75% { transform: rotate(-2deg); }
+}
+
+.animate-shiver {
+  animation: shiver 0.4s infinite;
+}
+@keyframes neonPulse {
+  0%, 100% {
+    text-shadow: 0 0 5px #22d3ee, 0 0 15px #22d3ee;
+  }
+  50% {
+    text-shadow: 0 0 20px #a855f7, 0 0 40px #a855f7;
+  }
+}
+
+.neon-urdu {
+  animation: neonPulse 2s infinite alternate;
+}
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  background: #22c55e;
+  color: white;
+}
+
+@keyframes toast {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 20px;
+    opacity: 1;
+  }
+}
+
+.animate-toast {
+  animation: toast 0.5s forwards;
+}
+
+/* پوری ویب سائٹ کے لیے ماڈرن اسکرول بار */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3b82f6 0%, #8b5cf6 100%);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #2563eb 0%, #7c3aed 100%);
+}
+
+/* Moving Rainbow Animation */
+@keyframes rainbow-move {
+  0% { color: #f87171; transform: translateY(0) rotate(0deg); }
+  33% { color: #fbbf24; transform: translateY(-5px) rotate(10deg); }
+  66% { color: #34d399; transform: translateY(5px) rotate(-10deg); }
+  100% { color: #60a5fa; transform: translateY(0) rotate(0deg); }
+}
+
+.animate-rainbow-move {
+  animation: rainbow-move 3s infinite ease-in-out;
+}
