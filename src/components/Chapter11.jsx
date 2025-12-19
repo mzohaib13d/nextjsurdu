@@ -46,7 +46,7 @@ export default function Chapter11() {
 
       <RightSidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} theme={theme} />
 
-      <main className="w-full max-w-6xl mx-auto px-4 md:px-12 pt-20 pb-20 leading-relaxed text-right">
+      <main className="custom-page-border w-full max-w-6xl mx-auto px-4 md:px-12 pt-20 pb-20 leading-relaxed text-right">
         
         {/* ٹائٹل اور انٹرو */}
         <section className="mb-12">

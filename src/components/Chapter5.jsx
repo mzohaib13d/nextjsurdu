@@ -47,7 +47,7 @@ export default function Chapter5() {
       <RightSidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} theme={theme} />
 
       {/* مین مواد */}
-      <main className="w-full max-w-6xl mx-auto px-4 sm:px-12 pt-20 pb-20 leading-relaxed text-right">
+      <main className="custom-page-border w-full max-w-6xl mx-auto px-4 sm:px-12 pt-20 pb-20 leading-relaxed text-right">
         
         <section className="mb-12">
           <h1 className="text-3xl md:text-5xl font-black mb-8 bg-clip-text text-transparent bg-gradient-to-l from-orange-500 to-pink-500 pb-2">

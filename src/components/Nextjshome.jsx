@@ -56,7 +56,7 @@ export default function Nextjshome() {
       <RightSidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} theme={theme} />
 
       {/* مین مواد */}
-      <main className="w-full max-w-6xl mx-auto px-4 md:px-12 pt-20 pb-20 leading-relaxed text-right overflow-x-hidden">
+      <main className="custom-page-border w-full max-w-6xl mx-auto px-4 md:px-12 pt-20 pb-20 leading-relaxed text-right overflow-x-hidden">
         
         {/* سیکشن: تعارف */}
         <section className="mb-12">

@@ -1,11 +1,24 @@
-@import "tailwindcss"; /* ⬅️ صرف یہ ایک لائن */
+@import "tailwindcss";
 
+/* 1. تھیم کنفیگریشن (Tailwind 4 کا نیا طریقہ) */
+@theme {
+  --color-page-border: #F1FDF5; /* آپ کا پسندیدہ ہلکا ہرا رنگ */
+  --font-urdu: 'Noto Nastaliq Urdu', serif;
+}
+
+/* 2. کسٹم یوٹیلیٹیز (Utilities) */
+@utility custom-page-border {
+  border-color: var(--color-page-border) !important;
+}
+
+/* 3. بیس اسٹائلز */
 @layer base {
   body {
-    font-family: 'Noto Nastaliq Urdu', serif;
+    font-family: var(--font-urdu);
   }
 }
 
+/* 4. آپ کے کسٹم اینیمیشنز اور ایفیکٹس */
 .neon-text {
   text-shadow: 0 0 8px #22d3ee, 0 0 16px #22d3ee;
 }
@@ -23,45 +36,26 @@
 .animate-shiver {
   animation: shiver 0.4s infinite;
 }
+
 @keyframes neonPulse {
-  0%, 100% {
-    text-shadow: 0 0 5px #22d3ee, 0 0 15px #22d3ee;
-  }
-  50% {
-    text-shadow: 0 0 20px #a855f7, 0 0 40px #a855f7;
-  }
+  0%, 100% { text-shadow: 0 0 5px #22d3ee, 0 0 15px #22d3ee; }
+  50% { text-shadow: 0 0 20px #a855f7, 0 0 40px #a855f7; }
 }
 
 .neon-urdu {
   animation: neonPulse 2s infinite alternate;
 }
-.copy-btn {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  padding: 4px 10px;
-  font-size: 12px;
-  border-radius: 6px;
-  background: #22c55e;
-  color: white;
-}
 
 @keyframes toast {
-  from {
-    right: -300px;
-    opacity: 0;
-  }
-  to {
-    right: 20px;
-    opacity: 1;
-  }
+  from { right: -300px; opacity: 0; }
+  to { right: 20px; opacity: 1; }
 }
 
 .animate-toast {
   animation: toast 0.5s forwards;
 }
 
-/* پوری ویب سائٹ کے لیے ماڈرن اسکرول بار */
+/* 5. اسکرول بار ڈیزائن */
 ::-webkit-scrollbar {
   width: 10px;
 }

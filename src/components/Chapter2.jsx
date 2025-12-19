@@ -56,7 +56,7 @@ export default function Chapter2() {
       <RightSidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} theme={theme} />
 
       {/* مین مواد */}
-      <main className="w-full max-w-6xl mx-auto px-4 md:px-12 pt-20 pb-20 leading-relaxed text-right overflow-x-hidden">
+      <main className="w-full leading-relaxed max-w-6xl mx-auto px-4 md:px-12 pt-20 pb-20 custom-page-border text-right overflow-x-hidden">
         
         <section className="mb-12">
           <h1 className="text-2xl md:text-6xl font-black mb-8 bg-clip-text text-transparent bg-gradient-to-l from-indigo-500 to-purple-600 pb-2 leading-tight">
