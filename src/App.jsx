@@ -16,6 +16,8 @@ import Chapter11 from "./components/Chapter11";
 import Chapter12 from "./components/Chapter12";
 import Chapter13 from "./components/Chapter13";
 import Chapter14 from "./components/Chapter14";
+import Chapter15 from "./components/Chapter15";   
+import Chapter16 from "./components/Chapter16";
 
 export default function App() {
   // Theme state
@@ -65,6 +67,8 @@ export default function App() {
           <Route path="/Chapter12" element={<Chapter12 />} />
           <Route path="/Chapter13" element={<Chapter13 />} />
           <Route path="/Chapter14" element={<Chapter14 />} />
+          <Route path="/Chapter15" element={<Chapter15 />} />
+          <Route path="/Chapter16" element={<Chapter16 />} />
         </Routes>
       </main>
     </div>

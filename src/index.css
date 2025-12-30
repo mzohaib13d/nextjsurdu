@@ -1,11 +1,24 @@
 @import "tailwindcss";
 
 /* 1. تھیم کنفیگریشن (Tailwind 4 کا نیا طریقہ) */
+/* Add custom theme configuration */
 @theme {
+  
   --color-page-border: #F1FDF5; /* آپ کا پسندیدہ ہلکا ہرا رنگ */
   --font-urdu: 'Noto Nastaliq Urdu', serif;
+  --animate-rainbow-border: rainbow-border 3s linear infinite;
+  
+  @keyframes rainbow-border {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  --background-image-rainbow-gradient: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #00ff00, #0099ff, #6600ff);
 }
-
 /* 2. کسٹم یوٹیلیٹیز (Utilities) */
 @utility custom-page-border {
   border-color: var(--color-page-border) !important;
