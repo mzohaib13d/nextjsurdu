@@ -22,6 +22,7 @@ export default function RightSidebar({ isOpen, toggleSidebar, theme }) {
     { path: "/Chapter14", label: "چیپٹر 14 - Next.js Deployment" },
     { path: "/Chapter15", label: "چیپٹر 15 - MongoDB, Middleware, and JWT" },
     { path: "/Chapter16", label: "چیپٹر 16 - Next.js 14.1.0 - Server Actions" },
+    { path: "/Chapter17", label: "چیپٹر 17 - Picture Upload System" },
   ];
 
   return (
