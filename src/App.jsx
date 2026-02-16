@@ -47,7 +47,7 @@ export default function App() {
       document.documentElement.classList.remove("dark");
     }
   }, [theme]);
-//  usePreventDevTools();
+ usePreventDevTools();
   return (
     // یہاں ہم نے <Router> کا ٹیگ ہٹا دیا ہے کیونکہ وہ main.jsx میں ہے
     <div
