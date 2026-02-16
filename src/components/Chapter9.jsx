@@ -32,7 +32,7 @@ export default function Chapter9() {
       <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-4 backdrop-blur-md bg-opacity-80 border-b border-slate-700/20">
  <button 
   onClick={toggleSidebar} 
-  className="p-3 rounded-full hover:bg-blue-500/10 hover:text-blue-500 transition-all focus:outline-none z-[60] relative text-current"
+  className="p-4 cursor-pointer rounded-full hover:bg-blue-500/10 hover:text-blue-500 transition-all focus:outline-none z-[60] relative text-current"
 >
   <div className="space-y-1.5">
     <span className={`block w-8 h-1 bg-current transition-all ${sidebarOpen ? "rotate-45 translate-y-2.5" : ""}`}></span>
@@ -43,7 +43,7 @@ export default function Chapter9() {
 
         <button 
           onClick={toggleTheme} 
-          className="px-4 py-2 cursor-pointer rounded-full shadow-lg bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-bold transition-transform active:scale-90"
+          className="px-4 py-2 cursor-pointer rounded-full  bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-lg font-bold transition-transform active:scale-90"
         >
           {theme === "light" ? "🌙 ڈارک موڈ" : "☀️ برائٹ موڈ"}
         </button>

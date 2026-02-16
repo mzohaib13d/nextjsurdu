@@ -6,7 +6,7 @@ export default function RightSidebar({ isOpen, toggleSidebar, theme }) {
   const location = useLocation();
 
   const menuItems = [
-    { path: "/", label: "چیپٹر 1 - ہوم پیج" },
+    { path: "/", label: "چیپٹر 1 - ہوم پیج - جامع تعارف" },
     { path: "/Chapter2", label: "چیپٹر 2 - Folder Structure" },
     { path: "/Chapter3", label: "چیپٹر 3 - Client & Server Components" },
     { path: "/Chapter4", label: "چیپٹر 4 - Layout & Headers" },
@@ -21,8 +21,62 @@ export default function RightSidebar({ isOpen, toggleSidebar, theme }) {
     { path: "/Chapter13", label: "چیپٹر 13 - Authentication in Next.js" },
     { path: "/Chapter14", label: "چیپٹر 14 - Next.js Deployment" },
     { path: "/Chapter15", label: "چیپٹر 15 - MongoDB, Middleware, and JWT" },
-    { path: "/Chapter16", label: "چیپٹر 16 - Next.js 14.1.0 - Server Actions" },
+    {
+      path: "/Chapter16",
+      label: "چیپٹر 16 - Authentication + MongoDB + Mongoose",
+    },
     { path: "/Chapter17", label: "چیپٹر 17 - Picture Upload System" },
+    {
+      path: "/Chapter18",
+      label: "چیپٹر 18 - Professional LMS System - MERN Stack + Next.js",
+    },
+    {
+      path: "/Chapter19",
+      label: "چیپٹر 19 - Professional Authentication System in LMS",
+    },
+    {
+      path: "/Chapter20",
+      label: "چیپٹر 20 - NextAuth.js Complete Integration in LMS",
+    },
+    {
+      path: "/Chapter21",
+      label: "چیپٹر 21 - LMS Production-Ready Security System",
+    },
+    {
+      path: "/Chapter22",
+      label: "چیپٹر 22 - Complete Course Management System in LMS",
+    },
+    { path: "/Chapter23", label: "چیپٹر 23 - Student Dashboard System in LMS" },
+    { path: "/Chapter24", label: "چیپٹر 24 - Video Upload & Streaming System" },
+    {
+      path: "/Chapter25",
+      label: "چیپٹر 25 - Complete Admin Dashboard & Payment Integration",
+    },
+    {
+      path: "/Chapter26",
+      label: "چیپٹر 26 - Real-time Features with Socket.io in LMS",
+    },
+    {
+      path: "/Chapter27",
+      label: "چیپٹر 27 - E-mail System & Analytics & SEO Optimization in LMS",
+    },
+    {
+      path: "/Chapter28",
+      label:
+        "28 چیپٹر - 🔒 Security & 🔍 SEO Optimization & 🚀 Complete Project",
+    },
+    {
+      path: "/Chapter29",
+      label: "چیپٹر 29 - React JS & Next.js Page Routing  & App Routing",
+    },
+    {
+      path: "/Chapter30",
+      label: "چیپٹر 30 -  : Next.js + Docker Complete Tutorial (Urdu)",
+    },
+    {
+      path: "/Chapter31",
+      label: "چیپٹر 31 -  : Next.js + Docker Complete Production Deployment (Urdu)",
+    },
   ];
 
   return (
@@ -94,7 +148,7 @@ export default function RightSidebar({ isOpen, toggleSidebar, theme }) {
                 to={item.path}
                 onClick={toggleSidebar}
                 className={`
-                  block p-4 rounded-xl border-2 transition-all duration-400 relative overflow-hidden
+                  block p-4 rounded-xl text-base border-2 transition-all duration-400 relative overflow-hidden
                   group
                   ${
                     isActive
@@ -113,9 +167,18 @@ export default function RightSidebar({ isOpen, toggleSidebar, theme }) {
           })}
         </nav>
 
-        <div className="p-4 text-center text-xs opacity-50">
-          v1.0 - Next.js Urdu Series
-        </div>
+<div className="relative p-4 text-center text-xs sm:text-sm md:text-base lg:text-lg overflow-hidden group">
+  {/* قوس قزح کے سات رنگ */}
+  <div className="absolute inset-0 bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-violet-500 rounded-lg animate-spin-slow opacity-90"></div>
+  <div className="relative bg-white rounded-lg p-3 m-[2px] shadow-md transform group-hover:scale-[0.99] transition-transform duration-300">
+    <div className="bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent font-bold">
+      Next.js Urdu Series - v1.0
+    </div>
+    <div className="text-gray-600 text-sm mt-1">
+  Zohaib Farooq &copy; Copyright 2026
+</div>
+  </div>
+</div>
       </div>
 
       {/* Overlay */}
@@ -185,7 +248,7 @@ export default function RightSidebar({ isOpen, toggleSidebar, theme }) {
         /* Active state styling */
         nav a.border-blue-500 {
           border-left: 3px solid #3b82f6;
-                  }
+        }
       `}</style>
     </>
   );

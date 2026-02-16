@@ -34,7 +34,7 @@ export default function Nextjshome() {
         {/* بائیں طرف اینیمیٹڈ مینیو بٹن */}
         <button
           onClick={toggleSidebar}
-          className="p-3 cursor-pointer rounded-full hover:bg-blue-500/10 hover:text-blue-500 transition-all focus:outline-none z-[60] relative text-current"
+          className="p-4 cursor-pointer rounded-full hover:bg-blue-500/10 hover:text-blue-500 transition-all focus:outline-none z-[60] relative text-current"
         >
           <div className="space-y-1.5">
             <span className={`block w-8 h-1 bg-current transition-all ${sidebarOpen ? "rotate-45 translate-y-2.5" : ""}`}></span>

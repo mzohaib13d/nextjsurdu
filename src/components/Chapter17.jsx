@@ -67,7 +67,7 @@ export default function Chapter17() {
 
   return (
     <div dir="rtl" className={`min-h-screen font-sans transition-colors duration-300 ${theme === "dark" ? "bg-gray-900 text-gray-100" : "bg-white text-gray-900"}`}>
-      
+      {/* Copy success notification */}
       {copySuccess && (
         <div className="fixed top-20 right-0 z-50 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-3 rounded-l-xl shadow-2xl font-bold border-l-4 border-yellow-400 animate-bounce">
           {copySuccess}
@@ -83,9 +83,7 @@ export default function Chapter17() {
           </div>
         </button>
         
-        <div className="text-center">
-          <h1 className="text-3xl font-bold text-blue-600 dark:text-blue-400">سبق 17: تصویر اپلوڈ سسٹم</h1>
-        </div>
+        
         
         <button 
           onClick={toggleTheme}
@@ -96,8 +94,27 @@ export default function Chapter17() {
       </header>
 
       <RightSidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} theme={theme} />
-
-      <div className="pt-20 pb-4 px-4 max-w-6xl mx-auto">
+      ِ<div className="pt-10 px-4 sm:px-6 lg:px-8"></div> {/* Main content padding */}
+ <div className="text-center mb-10">
+              <h1 className="text-3xl md:text-4xl font-bold mb-4 text-blue-600 dark:text-blue-400">
+                📸 سبق 17: تصویر اپلوڈ کرنا سیکھیں!
+              </h1>
+              <p className="text-lg mb-6 dark:text-gray-300">
+                <span className="bg-yellow-200 text-black px-2 py-1 rounded">بہت آسان</span> طریقے سے اپنی ویب سائٹ پر تصویریں اپلوڈ کریں
+              </p>
+              <div className="flex flex-wrap justify-center gap-4 mb-6">
+                <div className="px-4 py-2 bg-green-100 dark:bg-green-900/40 rounded-lg">
+                  <span className="font-bold text-green-700 dark:text-green-300">⏱️ وقت:</span> 30 منٹ
+                </div>
+                <div className="px-4 py-2 bg-blue-100 dark:bg-blue-900/40 rounded-lg">
+                  <span className="font-bold text-blue-700 dark:text-blue-300">📊 Level:</span> Beginner
+                </div>
+                <div className="px-4 py-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
+                  <span className="font-bold text-purple-700 dark:text-purple-300">🎯 مقصد:</span> Profile Picture بنانا
+                </div>
+              </div>
+            </div>
+      <div className="pt-4 pb-4 px-4 max-w-6xl mx-auto">
         <div className="flex flex-wrap gap-2 mb-6 overflow-x-auto">
           {tabs.map((tab) => (
             <button
@@ -118,25 +135,7 @@ export default function Chapter17() {
         
         {activeSection === "basics" && (
           <section className="animate-fadeIn">
-            <div className="text-center mb-10">
-              <h1 className="text-3xl md:text-4xl font-bold mb-4 text-blue-600 dark:text-blue-400">
-                📸 سبق 17: تصویر اپلوڈ کرنا سیکھیں!
-              </h1>
-              <p className="text-lg mb-6 dark:text-gray-300">
-                <span className="bg-yellow-200 text-black px-2 py-1 rounded">بہت آسان</span> طریقے سے اپنی ویب سائٹ پر تصویریں اپلوڈ کریں
-              </p>
-              <div className="flex flex-wrap justify-center gap-4 mb-6">
-                <div className="px-4 py-2 bg-green-100 dark:bg-green-900/40 rounded-lg">
-                  <span className="font-bold text-green-700 dark:text-green-300">⏱️ وقت:</span> 30 منٹ
-                </div>
-                <div className="px-4 py-2 bg-blue-100 dark:bg-blue-900/40 rounded-lg">
-                  <span className="font-bold text-blue-700 dark:text-blue-300">📊 Level:</span> Beginner
-                </div>
-                <div className="px-4 py-2 bg-purple-100 dark:bg-purple-900/40 rounded-lg">
-                  <span className="font-bold text-purple-700 dark:text-purple-300">🎯 مقصد:</span> Profile Picture بنانا
-                </div>
-              </div>
-            </div>
+           
 
             <section className="mb-10 p-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl border-2 border-dashed border-blue-300 dark:border-blue-700">
               <h2 className="text-2xl font-bold mb-4 text-center text-blue-700 dark:text-blue-300">
