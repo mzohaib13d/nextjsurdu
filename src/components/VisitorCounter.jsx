@@ -4,6 +4,7 @@ import { doc, getDoc, setDoc, updateDoc, increment } from "firebase/firestore";
 
 // visitor ID generator
 function getVisitorId() {
+  
   let id = localStorage.getItem("visitor_id");
 
   if (!id) {
