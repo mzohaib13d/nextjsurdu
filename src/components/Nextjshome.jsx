@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import RightSidebar from "./RightSidebar"; 
+import VisitorCounter from "./VisitorCounter";
 
 export default function Nextjshome() {
   // تھیم کو محفوظ کرنے اور لوڈ کرنے کا لاجک
@@ -60,13 +61,28 @@ export default function Nextjshome() {
         
         {/* سیکشن: تعارف */}
         <section className="mb-12">
-          <h1 className="text-3xl md:text-6xl font-black mb-8 bg-clip-text text-transparent bg-gradient-to-l from-blue-500 to-emerald-500 pb-2 leading-tight">
-            Next.js: ایک جامع تعارف اور ارتقاء
-          </h1>
-          <p className="text-xl md:text-2xl mb-6">
-            Next.js ایک جدید اور طاقتور React فریم ورک ہے جس کا آغاز <strong>2016</strong> میں <strong>Vercel</strong> (سابقہ نام Zeit) کمپنی کی جانب سے ہوا۔ اسے بنانے کا بنیادی مقصد React ایپلیکیشنز کو <strong>مکمل اور پروڈکشن ریڈی</strong> بنانا تھا۔
-          </p>
-        </section>
+
+  {/* Header Row: Heading + Visitor Counter */}
+  <div className="flex items-center justify-between w-full mb-8">
+
+    {/* Left: Gradient Heading */}
+    <h1 className="text-3xl md:text-6xl font-black bg-clip-text text-transparent bg-gradient-to-l from-blue-500 to-emerald-500 leading-tight">
+      Next.js: ایک جامع تعارف اور ارتقاء
+    </h1>
+
+    {/* Right: Visitor Counter */}
+    <div className="flex items-center gap-2">
+      <VisitorCounter />
+    </div>
+
+  </div>
+
+  {/* Description */}
+  <p className="text-xl md:text-2xl mb-6">
+    Next.js ایک جدید اور طاقتور React فریم ورک ہے جس کا آغاز <strong>2016</strong> میں <strong>Vercel</strong> (سابقہ نام Zeit) کمپنی کی جانب سے ہوا۔ اسے بنانے کا بنیادی مقصد React ایپلیکیشنز کو <strong>مکمل اور پروڈکشن ریڈی</strong> بنانا تھا۔
+  </p>
+
+</section>
 
         {/* سیکشن: مسائل کا حل */}
         <section className="mb-12">

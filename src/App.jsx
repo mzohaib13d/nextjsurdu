@@ -33,6 +33,7 @@ import Chapter28 from "./components/Chapter28";
 import Chapter29 from "./components/Chapter29";
 import Chapter30 from "./components/Chapter30";
 import Chapter31 from "./components/Chapter31";
+import VisitorCounter from "./components/VisitorCounter";
 
 export default function App() {
   // Theme state
