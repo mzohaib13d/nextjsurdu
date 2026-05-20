@@ -1685,14 +1685,14 @@ export default function GalleryPage() {
               <h2 className="text-2xl font-bold mb-6 text-center text-orange-600 dark:text-orange-400">🆘 اگر مسئلہ ہو تو؟</h2>
               
               <div className="space-y-4">
-                <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
-                  <p className="font-bold text-red-600 dark:text-red-400 mb-2">❌ Error: Too many files selected</p>
-                  <p className="text-sm text-gray-900 dark:text-gray-300">فائل limit لگائیں: if (files.length > 10) alert('زیادہ سے زیادہ 10 تصویریں')</p>
-                </div>
+               <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+  <p className="font-bold text-red-600 dark:text-red-400 mb-2">❌ Error: Too many files selected</p>
+  <p className="text-sm text-gray-900 dark:text-gray-300">فائل limit لگائیں: if (files.length &gt; 10) alert('زیادہ سے زیادہ 10 تصویریں')</p>
+</div>
                 
                 <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
                   <p className="font-bold text-red-600 dark:text-red-400 mb-2">❌ Error: Some images failed to upload</p>
-                  <p className="text-sm text-gray-900 dark:text-gray-300">loop میں try-catch استعمال کریں تاکہ ایک فائل fail ہو تو باقی چلتی رہیں</p>
+                 <p className="text-sm text-gray-900 dark:text-gray-300">فائل limit لگائیں: if (files.length &gt; 10) alert('زیادہ سے زیادہ 10 تصویریں')</p>
                 </div>
                 
                 <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">

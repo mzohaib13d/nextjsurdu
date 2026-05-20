@@ -3,6 +3,7 @@ import ThemeToggle from "./components/ThemeToggle";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Nextjshome from "./components/Nextjshome";
+import Chapter1andhalf from "./components/Chapter1andhalf";
 import Chapter2 from "./components/Chapter2";
 import Chapter3 from "./components/Chapter3";
 import Chapter4 from "./components/Chapter4";
@@ -48,7 +49,9 @@ export default function App() {
       document.documentElement.classList.remove("dark");
     }
   }, [theme]);
- usePreventDevTools();
+  
+  usePreventDevTools();
+  
   return (
     // یہاں ہم نے <Router> کا ٹیگ ہٹا دیا ہے کیونکہ وہ main.jsx میں ہے
     <div
@@ -65,11 +68,13 @@ export default function App() {
       <div className="fixed top-24 right-6 z-50">
         <ThemeToggle theme={theme} setTheme={setTheme} />
       </div>
+      
       {/* Main Content */}
       <main className="p-6 md:p-10 text-lg md:text-xl leading-loose">
         <Routes>
           {/* اب سوئچنگ بالکل صحیح کام کرے گی */}
           <Route path="/" element={<Nextjshome />} />
+          <Route path="/Chapter1andhalf" element={<Chapter1andhalf />} />
           <Route path="/Chapter2" element={<Chapter2 />} />
           <Route path="/Chapter3" element={<Chapter3 />} />
           <Route path="/Chapter4" element={<Chapter4 />} />

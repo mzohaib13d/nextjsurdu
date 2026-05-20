@@ -7,6 +7,7 @@ export default function RightSidebar({ isOpen, toggleSidebar, theme }) {
 
   const menuItems = [
     { path: "/", label: "چیپٹر 1 - ہوم پیج - جامع تعارف" },
+    { path: "/Chapter1andhalf", label: "چیپٹر 1.5 - Next.js پروجیکٹ بنانے کا شارٹ کمانڈ" },
     { path: "/Chapter2", label: "چیپٹر 2 - Folder Structure" },
     { path: "/Chapter3", label: "چیپٹر 3 - Client & Server Components" },
     { path: "/Chapter4", label: "چیپٹر 4 - Layout & Headers" },
@@ -167,18 +168,18 @@ export default function RightSidebar({ isOpen, toggleSidebar, theme }) {
           })}
         </nav>
 
-<div className="relative p-4 text-center text-xs sm:text-sm md:text-base lg:text-lg overflow-hidden group">
-  {/* قوس قزح کے سات رنگ */}
-  <div className="absolute inset-0 bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-violet-500 rounded-lg animate-spin-slow opacity-90"></div>
-  <div className="relative bg-white rounded-lg p-3 m-[2px] shadow-md transform group-hover:scale-[0.99] transition-transform duration-300">
-    <div className="bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent font-bold">
-      Next.js Urdu Series - v1.0
-    </div>
-    <div className="text-gray-600 text-sm mt-1">
-  Zohaib Farooq &copy; Copyright 2026
-</div>
-  </div>
-</div>
+        <div className="relative p-4 text-center text-xs sm:text-sm md:text-base lg:text-lg overflow-hidden group">
+          {/* قوس قزح کے سات رنگ */}
+          <div className="absolute inset-0 bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-violet-500 rounded-lg animate-spin-slow opacity-90"></div>
+          <div className="relative bg-white rounded-lg p-3 m-[2px] shadow-md transform group-hover:scale-[0.99] transition-transform duration-300">
+            <div className="bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent font-bold">
+              Next.js Urdu Series - v1.0
+            </div>
+            <div className="text-gray-600 text-sm mt-1">
+              Zohaib Farooq &copy; Copyright 2026
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Overlay */}
